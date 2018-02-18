@@ -77,3 +77,15 @@ ggplot(data=poll, aes(x=Candidate, y=Poll, group=Network, colour=Network)) +
   xlab('Candidates') +
   ylab('TV Network Polls') +
   theme(legend.position="top")
+
+cars
+
+g <- ggplot(data=poll, aes(x=Candidate,y=Poll,colour=Network, group=Network))
+ g +  geom_bar()
+
+#  geom_point() +
+  scale_color_brewer(palette="Dark2") +
+  ggtitle('2016 Primary Polling Results') +
+  xlab('Candidates') +
+  ylab('TV Network Polls') +
+  theme(legend.position="top")
