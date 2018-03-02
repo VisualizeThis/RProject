@@ -1,0 +1,2 @@
+The mean of the Sex attribute is:
+1.2
