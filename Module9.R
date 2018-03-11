@@ -28,7 +28,7 @@ stripplot(price ~ factor(carat),
           cex=.8, 
           pch=c(1,20),
           groups=clarity,
-          main = "Price of myData by Carat", 
+          main = "Price of Diamonds by Carat", 
           xlab = "Carat", ylab = "Price")
 
 # ggplot
