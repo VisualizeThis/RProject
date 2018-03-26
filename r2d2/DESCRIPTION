@@ -6,7 +6,7 @@ Date: 2018-03-25
 Author: Rohit Doobay <rdoobay@mail.usf.edu>
 Maintainer: Rohit Doobay <rdoobay@mail.usf.edu>
 Description: This package has the functions to get CDC data, filter and build a bar chart.
-Depends: R (>= 3.0.1)       
+Depends: R (>= 3.0.1), ggplot2       
 License: CCO
 Encoding: UTF-8
 LazyData: true
