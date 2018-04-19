@@ -14,7 +14,7 @@ get.IMDB.data <- function(url)
   else if (!requireNamespace("rvest", quietly = TRUE))
     {
       return("Package \"rvest\" needed for this function to work. Please install it.")
-    }
+    } else
   {
   webpage <- read_html(url)
   return(webpage)
