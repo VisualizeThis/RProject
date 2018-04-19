@@ -1,13 +1,14 @@
 Package: r2d2
 Type: Package
-Title: Bar Chart of CDC data by State and Year
+Title: Build Movies and TV Shows dataset
 Version: 0.1.0
-Date: 2018-03-25
+Date: 2018-04-18
 Author: Rohit Doobay <rdoobay@mail.usf.edu>
 Maintainer: Rohit Doobay <rdoobay@mail.usf.edu>
-Description: This package has the functions to get CDC data, filter and build a bar chart.
-Depends: R (>= 3.0.1), ggplot2       
-License: CCO
+Description: This package has the functions to get data of popular and top 100 movies
+             and TV shows from IMDB website.  
+Depends: R (>= 3.0.1), rvest, xml2
+License: GPL-2
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1

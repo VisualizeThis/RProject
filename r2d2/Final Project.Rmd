@@ -1,0 +1,60 @@
+---
+title: "IMDB Data"
+author: "Rohit Doobay"
+date: "April 18, 2018"
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Package r2d2
+
+## Introduction
+
+This package was built for the R Programming course final Project.  I became interest in scraping and packaging data obtained from web sites because of the wealth of information that can be obtained from dynamic pages.  This package has the code on how to use R to scrape data from web sites.   I used IMDB as the web site source and scraped the following 4 pages and consolidate the data into dataset:
+
+* Top 100 Movies
+* Top 100 TV Shows
+* Most Popular Movies
+* Most Popular TV Shows
+
+## Dependencies
+
+This package is dependant on the following libraries:
+
+* rvest - Necessary for scraping web sites
+* xml2  - Necessary for parsing the HTML
+
+## List of functions
+
+```{r message=FALSE}
+library(r2d2)
+ls("package:r2d2")
+```
+
+## How does it work?
+
+The main functions are:
+
+* **getpopular**
+** This function will take in a string of 'movies' or 'tvshows'.  It will evaluate it and return a dataset of the Top 100 for the apporpriate category
+
+* **gettopshows**
+** This function will take as input the same paramaters as 'getpopular' and will return a dataset of the most popular shows.  
+
+## Example getting Popular and top 100 shows
+
+```{r message=FALSE}
+library(r2d2)
+
+popular.movies <- getpopular('movies')
+str(popular.movies)
+
+popular.tvshows <- gettopshows('tvshows')
+str(popular.tvshows)
+```
